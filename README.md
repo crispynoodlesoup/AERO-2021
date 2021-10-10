@@ -8,19 +8,18 @@ Let's all pray for AERO's 2nd year competing :)
 
 <h3>Tip for Exploration</h3>
 
-The bulk of our original code is in TeamCode/src/main/java/org/firstinspires/ftc/teamcode
-
+The bulk of our original code is in TeamCode/src/main/java/org/firstinspires/ftc/teamcode <br>
 There you will find all of our custom OpModes and utilities
 
 <h1>Resources:</h1>
 
-this is not a fully comprehensive list, but should come in useful for anyone exploring our code
+This is not a fully comprehensive list, but should come in useful for anyone exploring our code, or just getting started with FTC programming in general
 <ul>
 	<li><a href="https://gm0.org/en/latest/index.html">Game Manual 0:</a> a comprehensive guide to competetive FTC</li>
 	<li><a href="https://github.com/alan412/LearnJavaForFTC/blob/master/LearnJavaForFTC.pdf">Learn Java For FTC:</a> a thorough guide on programming in java for FTC</li>
 	<li><a href="acme-robotics.gitbook.io/road-runner">ACME robotic's guide to roadrunner:</a> a great resource for understaning roadrunner internals made by its creators</li>
 	<li><a href="learnroadrunner.com">Learn Roadrunner:</a> a quickstart guide focused on the implementation and use of roadrunner</li>
 	<li><a href="https://github.com/acmerobotics/ftc-dashboard">FTC Dashboard:</a> a GUI used for debugging and diagnosis</li>
-	<li><a href="https://docs.revrobotics.com/control-hub/control-hub-gs">Rev Control Hub</a> documentation on the rev control hub's internals and proper use</li>
+	<li><a href="https://docs.revrobotics.com/control-hub/control-hub-gs">Rev Control Hub:</a> documentation on the rev control hub's internals and proper use</li>
 	<li><a href="https://github.com/FIRST-Tech-Challenge/FtcRobotController/tree/master/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples">FTC Robot Controller Samples:</a> samples of robot OpModes extremly useful for learning basic FTC syntax</li>
 </ul>
