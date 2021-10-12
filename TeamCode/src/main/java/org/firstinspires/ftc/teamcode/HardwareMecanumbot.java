@@ -118,11 +118,12 @@ public class HardwareMecanumbot {//access instruments of Hub
     
     //gives encoder values for driver motors
     public void updateEncoderValues() {
-        // drive encoders
-        encoderFL = frontLeft.getCurrentPosition() / ticksPerRotation;
-        encoderFR = frontRight.getCurrentPosition() / ticksPerRotation;
-        encoderBL = backLeft.getCurrentPosition() / ticksPerRotation;
-        encoderBR = backRight.getCurrentPosition() / ticksPerRotation;
+        // drive encode positions translated to inches using the equation:
+        // revolutions * pi * wheel diameter
+        encoderFL = (frontLeft.getCurrentPosition() / ticksPerRotation)  * 3.14159 * 3.937;
+        encoderFR = (frontRight.getCurrentPosition() / ticksPerRotation) * 3.14159 * 3.937;
+        encoderBL = (backLeft.getCurrentPosition() / ticksPerRotation)   * 3.14159 * 3.937;
+        encoderBR = (backRight.getCurrentPosition() / ticksPerRotation)  * 3.14159 * 3.937;
     }
     
     //reading angle objects z axis
