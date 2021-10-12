@@ -62,13 +62,13 @@ public class HardwareMecanumbot {//access instruments of Hub
         backLeft.setDirection(DcMotor.Direction.REVERSE);
         backRight.setDirection(DcMotor.Direction.FORWARD);
 
-        // Encoders for odometry
+        // Encoders for each of the drive motors
         frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         backRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-        //encoders for driving
+        // encoders for driving
         frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -124,6 +124,19 @@ public class HardwareMecanumbot {//access instruments of Hub
         encoderFR = (frontRight.getCurrentPosition() / ticksPerRotation) * 3.14159 * 3.937;
         encoderBL = (backLeft.getCurrentPosition() / ticksPerRotation)   * 3.14159 * 3.937;
         encoderBR = (backRight.getCurrentPosition() / ticksPerRotation)  * 3.14159 * 3.937;
+    }
+    
+    // averages encoder values
+    public double forwardAverage() {
+        return (encoderFL - encoderFR + encoderBL - encoderBR) / 4.0;
+    }
+    
+    public void resetDriveEncoders() {
+        // Encoders for each of the drive motors
+        frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
     }
     
     //reading angle objects z axis
