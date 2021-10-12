@@ -37,7 +37,7 @@ public class Aerobot extends LinearOpMode {
         // run until the end of the match (driver presses STOP)
         while (opModeIsActive()) {
             // Setup variables to read the joystick values for this loop
-            forward   = -gamepad1.left_stick_y;
+            forward   = -gamepad1.left_stick_y; // the y stick is reversed, up is negative
             turn      =  gamepad1.right_stick_x;
             strafe    =  gamepad1.left_stick_x;
             varSneak  =  gamepad1.right_trigger;
