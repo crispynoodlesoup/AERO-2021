@@ -66,12 +66,13 @@ public class HardwareMecanumbot {//access instruments of Hub
         frontLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         frontRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         backLeft.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        backRight.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
         //encoders for driving
-        frontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        frontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        backLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        backRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        frontLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        frontRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        backLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        backRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         
         //brake the motors
         frontLeft.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.FLOAT);
@@ -117,8 +118,11 @@ public class HardwareMecanumbot {//access instruments of Hub
     
     //gives encoder values for driver motors
     public void updateEncoderValues() {
-        // odometry encoders
-        encoderFL = ticksPerRotation;
+        // drive encoders
+        encoderFL = frontLeft.getCurrentPosition() / ticksPerRotation;
+        encoderFR = frontRight.getCurrentPosition() / ticksPerRotation;
+        encoderBL = backLeft.getCurrentPosition() / ticksPerRotation;
+        encoderBR = backRight.getCurrentPosition() / ticksPerRotation;
     }
     
     //reading angle objects z axis
@@ -130,4 +134,7 @@ public class HardwareMecanumbot {//access instruments of Hub
     public void resetAngle() {
         angle = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
     }
+    
 }
+
+
