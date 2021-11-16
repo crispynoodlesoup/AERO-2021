@@ -51,9 +51,9 @@ public class Aerobot extends LinearOpMode {
 
             // logic for carousel
             if(gamepad1.x)
-                robot.carousel.setPower(robot.powerRamp(0.75, 0, 1));
+                robot.carousel.setPower(robot.powerRamp(0.6, 0.1, 0.8));
             else if(gamepad1.b)
-                robot.carousel.setPower(robot.powerRamp(0.75, 0, -1));
+                robot.carousel.setPower(robot.powerRamp(0.6, -0.1, -0.8));
             else {
                 robot.rampTime.reset();
                 robot.carousel.setPower(0);
@@ -69,7 +69,7 @@ public class Aerobot extends LinearOpMode {
             if(gamepad1.left_bumper && !LBPrev)
                 capToggle = !capToggle;
             if(capToggle)
-                robot.cap.setPosition(0.68 - 0.36*gamepad1.left_trigger);
+                robot.cap.setPosition(0.66 - 0.40*gamepad1.left_trigger);
             else
                 robot.cap.setPosition(0.865);
             LBPrev = gamepad1.left_bumper;
