@@ -17,7 +17,7 @@ This is not a fully comprehensive list, but should come in useful for anyone exp
 <ul>
 	<li><a href="https://gm0.org/en/latest/index.html">Game Manual 0:</a> a comprehensive guide to competetive FTC</li>
 	<li><a href="https://github.com/alan412/LearnJavaForFTC/blob/master/LearnJavaForFTC.pdf">Learn Java For FTC:</a> a thorough guide on programming in java for FTC</li>
-	<li><a href="acme-robotics.gitbook.io/road-runner">ACME robotic's guide to roadrunner:</a> a great resource for understaning roadrunner internals made by its creators</li>
+	<li><a href="acme-robotics.gitbook.io/road-runner">ACME robotic's guide to roadrunner:</a> a great resource for understanding roadrunner internals made by its creators</li>
 	<li><a href="learnroadrunner.com">Learn Roadrunner:</a> a quickstart guide focused on the implementation and use of roadrunner</li>
 	<li><a href="https://github.com/acmerobotics/ftc-dashboard">FTC Dashboard:</a> a GUI used for debugging and diagnosis</li>
 	<li><a href="https://docs.revrobotics.com/control-hub/control-hub-gs">Rev Control Hub:</a> documentation on the rev control hub's internals and proper use</li>
