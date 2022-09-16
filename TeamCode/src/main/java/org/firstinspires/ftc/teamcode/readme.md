@@ -3,20 +3,13 @@
 Welcome!
 
 This module, TeamCode, is the place where you will write/paste the code for your team's
-robot controller App. This module is currently empty (a clean slate) but the
-process for adding OpModes is straightforward.
+robot controller App.
 
 ## Creating your own OpModes
 
-The easiest way to create your own OpMode is to copy a Sample OpMode and make it your own.
+The easiest way to create your own OpMode is to copy a Sample OpMode and make it your own, Which can be found at:
 
-Sample opmodes exist in the FtcRobotController module.
-To locate these samples, find the FtcRobotController module in the "Project/Android" tab.
-
-Expand the following tree elements:
- FtcRobotController / java / org.firstinspires.ftc.robotcontroller / external / samples
-
-A range of different samples classes can be seen in this folder.
+    FtcRobotController / java / org.firstinspires.ftc.robotcontroller / external / samples
 
 ## NOTE FOR FUTURE PROGRAMMERS
 
