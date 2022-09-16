@@ -9,7 +9,7 @@ robot controller App.
 
 The easiest way to create your own OpMode is to copy a Sample OpMode and make it your own, Which can be found at:
 
-    FtcRobotController / java / org.firstinspires.ftc.robotcontroller / external / samples
+    AERO-2021 / FtcRobotController / java / org.firstinspires.ftc.robotcontroller / external / samples
 
 ## NOTE FOR FUTURE PROGRAMMERS
 
