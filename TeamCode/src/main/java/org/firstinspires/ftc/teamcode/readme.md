@@ -17,3 +17,12 @@ Expand the following tree elements:
  FtcRobotController / java / org.firstinspires.ftc.robotcontroller / external / samples
 
 A range of different samples classes can be seen in this folder.
+
+## NOTE FOR FUTURE PROGRAMMERS
+
+all the custom Roadrunner pathing is in drive/customOpModes
+hardwareMecanumbot.java, aerobot.java and aerobotManual.java have all the driver period code I used for this year
+ConceptTensorFlowObjectDetectionWebcam.java gives you a live view of the camera through FTC dashboard
+
+Good luck,
+Rafael P.
