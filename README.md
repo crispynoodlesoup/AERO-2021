@@ -10,13 +10,13 @@ Let's all pray for AERO's 2nd year competing :)
 
 The bulk of our original code is in 
 
-    TeamCode/src/main/java/org/firstinspires/ftc/teamcode
+    [/TeamCode/src/main/java/org/firstinspires/ftc/teamcode](/TeamCode/src/main/java/org/firstinspires/ftc/teamcode)
 
 There you will find all of our custom OpModes and utilities
 
 For FTC samples, look at
 
-    FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/
+    [FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples](FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples)
 
 <h1>Resources:</h1>
 
