@@ -12,7 +12,7 @@ The bulk of our original code is in [/TeamCode/src/main/java/org/firstinspires/f
 
 There you will find all of our custom OpModes and utilities
 
-For FTC samples, look at [FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples](FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples)
+For FTC samples, look at [/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples](/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples)
 
 <h1>Resources:</h1>
 
