@@ -22,7 +22,6 @@ public class Aerobot extends LinearOpMode {
     public void runOpMode() {
         // Initialize objects with this OpMode
         robot.initDrive(this);
-        calc.initDrive(robot);
 
         // Extra variables for movement
         double  forward, turn, strafe, varSneak;
