@@ -16,7 +16,6 @@ public class Aerobot extends LinearOpMode {
     private ElapsedTime runtime = new ElapsedTime();
 
     // Create Objects from our custom classes
-    ControlCalc calc = new ControlCalc();
     HardwareMecanumbot robot = new HardwareMecanumbot();
 
     @Override
